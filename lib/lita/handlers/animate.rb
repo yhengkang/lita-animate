@@ -3,7 +3,7 @@ module Lita
     class Animate < Handler
       URL = "https://ajax.googleapis.com/ajax/services/search/images"
 
-      route(/(?:animate|gif|anim)(?:\s+me)? (.+)/, :fetch, command: true, help: {
+      route(/(?:animate|gif|anim)(?:\s+me)? (.+)/i, :fetch, command: true, help: {
         "animate QUERY" => "animate everything"
       })
 
