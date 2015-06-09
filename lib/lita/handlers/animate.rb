@@ -27,7 +27,7 @@ module Lita
 
         if data["responseStatus"] == 200
           choice = data["responseData"]["results"].sample
-          response.reply "#{choice["unescapedUrl"]}#.gif"
+          response.reply "#{choice["unescapedUrl"]}"
         else
           reason = data["responseDetails"] || "unknown error"
           Lita.logger.warn(
