@@ -17,7 +17,7 @@ module Lita
         http_response = http.get(
           URL,
           v: "1.0",
-          q: query,
+          q: query + " animated",
           safe: safe_value,
           rsz: 8,
           as_filetype: "gif"
