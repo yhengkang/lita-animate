@@ -20,7 +20,7 @@ module Lita
           q: query,
           safe: safe_value,
           rsz: 8,
-          imgtype: "animated"
+          as_filetype: "gif"
         )
 
         data = MultiJson.load(http_response.body)
